@@ -229,6 +229,7 @@ namespace PROShine
         {
             Title = username == null ? "" : username + " - ";
             Title += App.Name + " " + App.Version;
+            Title += " personalized";
 #if DEBUG
             Title += " (debug)";
 #endif

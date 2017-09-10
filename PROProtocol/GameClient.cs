@@ -369,9 +369,9 @@ namespace PROProtocol
                 }
                 else if (ScriptStatus == 1234) // Yes, this is a magic value. I don't care.
                 {
-                    //0-3 female - 4-7 male
+                    //0-3 male - 4-7 female
                     //all bots will be male slaves - hahah 
-                    SendCreateCharacter(Rand.Next(14), Rand.Next(28), 4 + Rand.Next(4), Rand.Next(6), Rand.Next(5));
+                    SendCreateCharacter(Rand.Next(14), Rand.Next(28), Rand.Next(4), Rand.Next(6), Rand.Next(5));
                     IsScriptActive = false;
                     _dialogTimeout.Set();
                 }
