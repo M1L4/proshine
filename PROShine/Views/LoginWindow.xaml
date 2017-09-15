@@ -58,7 +58,7 @@
                     <RadioButton Name="Socks5RadioButton" Checked="ProxyCheckBox_Checked" Unchecked="ProxyCheckBox_Checked" IsChecked="True">SOCKS5</RadioButton>
                 </StackPanel>
                 <Label Name="ProxyHostLabel" Grid.Row="8" Grid.Column="0" Content="Host:" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="1" />
-                <TextBox Name="ProxyHostTextBox" Width="256" Grid.Row="8" Grid.Column="1" Margin="2"></TextBox>
+                <TextBox Name="ProxyHostTextBox" Width="256" Grid.Row="8" Grid.Column="1" Margin="2" TextChanged="ProxyHostTextBox_TextChanged"></TextBox>
                 <Label Name="ProxyPortLabel" Grid.Row="9" Grid.Column="0" Content="Port:" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="1" />
                 <TextBox Name="ProxyPortTextBox" Width="256" Grid.Row="9" Grid.Column="1" Margin="2"></TextBox>
                 <CheckBox Name="AnonymousCheckBox" Grid.Row="10" Grid.Column="1" Margin="2" Checked="ProxyCheckBox_Checked" Unchecked="ProxyCheckBox_Checked" IsChecked="True">Use anonymous authentication</CheckBox>

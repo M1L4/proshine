@@ -412,5 +412,23 @@ namespace PROShine
                 }
             }
         }
+
+        private void ProxyHostTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string input = ProxyHostTextBox.Text;
+
+            Regex ipReg = new Regex(@"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+");
+            MatchCollection result = ipReg.Matches(input);
+
+            if (result.Count > 0)
+            {
+                string ip = result[0].ToString();
+                string host = ip.Split(':')[0];
+                string port = ip.Split(':')[1];
+
+                ProxyHostTextBox.Text = host;
+                ProxyPortTextBox.Text = port;
+            }
+        }
     }
 }
